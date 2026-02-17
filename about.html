@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Character encoding -->
   <meta charset="UTF-8">
-  <title>LIS 500: Code and Power - About Me</title>
+  <!-- Mobile scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tab title -->
+  <title>About Me</title>
+  <!-- External CSS only -->
   <link rel="stylesheet" href="stylepage.css">
+  <!-- End head -->
 </head>
-
 <body>
+  <!-- Site header -->
+  <header class="site-header">
+    <!-- Page title -->
+    <h1>LIS 500 Code and Power</h1>
+    <!-- Subtitle -->
+    <p class="subtitle">About me</p>
 
-<header>
-  <!-- Comment 1: Reused header for consistency -->
-  <h1>LIS 500: Code and Power</h1>
-  <!-- Comment 2: Reused subtitle -->
-  <p>An intersectional examination of the Internet</p>
-</header>
+    <!-- Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link active" href="about.html">About Me</a>
+      <a class="nav-link" href="resources.html">Implicit Bias Resources</a>
+      <a class="nav-link" href="techhero.html">Tech Hero</a>
+      <!-- End nav -->
+    </nav>
+    <!-- End header -->
+  </header>
 
-<div class="container">
+  <!-- Main content -->
+  <main class="container">
+    <!-- About card -->
+    <section class="card">
+      <!-- Heading -->
+      <h2>Hi, I am Cody</h2>
 
-  <nav>
-    <!-- Comment 3: Navigation links -->
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="resources.html">Resources for Implicit Bias</a>
-    <a href="techhero.html">Tech Hero</a>
-  </nav>
+      <!-- Profile image -->
+      <figure class="figure">
+        <!-- Simple avatar image -->
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+          alt="Simple profile icon"
+          class="responsive-img profile-img"
+        >
+        <!-- Caption -->
+        <figcaption class="caption">Student site for course work and projects.</figcaption>
+        <!-- End figure -->
+      </figure>
 
-  <main>
-    <!-- Comment 4: About page content -->
-    <h2>About Me</h2>
+      <!-- Bio paragraph -->
+      <p>
+        I am a student interested in how technology connects to real life outcomes, especially in areas like money, opportunity, and access.
+        In this class I want to understand how bias can enter systems through design choices, data, and policies.
+      </p>
 
-    <!-- Comment 5: Optional image (works only if you add a file) -->
-    <!-- If you upload a picture later, name it cody.jpg and put it in the repo -->
-    <!-- <img class="profile-img" src="cody.jpg" alt="Cody Sale headshot"> -->
+      <!-- Another paragraph -->
+      <p>
+        My goal with this site is to build a clean multi page project that shows what I learned, while also practicing clear writing,
+        accessibility basics, and organized code.
+      </p>
 
-    <h3>Cody Sale</h3>
-    <p>
-      Hi! My name is Cody. I’m a student at the University of Wisconsin–Madison, and I’m interested in finance,
-      technology, and how online systems shape real-life opportunities.
-    </p>
-    <p>
-      In LIS 500, I’m focusing on how bias can show up in everyday tools (like search results, hiring platforms,
-      and algorithms) and how understanding intersectionality can help us design fairer systems.
-    </p>
+      <!-- End about card -->
+    </section>
+
+    <!-- Short list section -->
+    <section class="card">
+      <!-- Heading -->
+      <h2>What I am focusing on</h2>
+      <!-- List -->
+      <ul>
+        <li>How bias can be built into systems without obvious intent</li>
+        <li>How intersectionality changes the way people experience technology</li>
+        <li>How to design and communicate in more inclusive ways</li>
+      </ul>
+      <!-- End list -->
+    </section>
+    <!-- End main -->
   </main>
 
-</div>
-
-<footer>
-  <p>© 2026 Cody Sale</p>
-</footer>
-
+  <!-- Footer -->
+  <footer class="site-footer">
+    <!-- Footer line -->
+    <p>Created by Cody Sals</p>
+    <!-- End footer -->
+  </footer>
 </body>
 </html>
