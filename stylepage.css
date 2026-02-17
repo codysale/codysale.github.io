@@ -1,1 +1,54 @@
+/* General page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
 
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Layout container */
+.container {
+    display: flex;
+}
+
+/* Sidebar navigation */
+nav {
+    width: 220px;
+    background-color: #e6e6e6;
+    padding: 20px;
+    height: 100vh;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 30px;
+    background-color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+}
