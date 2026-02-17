@@ -1,1 +1,61 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIS 500: Code and Power</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+            .then(res => res.text())
+            .then(html =>
+            {
+                document.getElementById("header").innerHTML = html;
+
+                const currentPage =
+                    window.location.pathname.split("/").pop() || "index.html";
+
+                document.querySelectorAll("nav a").forEach(link =>
+                {
+                    if (link.getAttribute("href") === currentPage)
+                    {
+                        link.classList.add("active");
+                    }
+                });
+            });
+    </script>
+    <div class="about-container">
+        <img class="headshot" src="Images/headshot_arnav.png" alt="Arnav Mohakud Headshot">
+
+        <div class="about-text">
+            <h2>Arnav Mohakud</h2>
+            <p>Hi! My name is Arnav Mohakud. I am a senior doing a Computer Science major, and minors in Data Science
+                and
+                Mathematics. I am interested in learning about the social background behind the tech scene, and its
+                history
+                and development. I want understand the biasses that both I as well as other people hold, and how we can
+                improve awareness and equity in technology and information work.</p>
+        </div>
+    </div>
+    <div class="about-container">
+
+        <img class="headshot" src="Images/headshot_siddhanth.jpg" alt="Siddhanth Pandey Headshot">
+        <div class="about-text">
+
+            <h2>Siddhanth Pandey</h2>
+            <p>I'm a computer science student interested in both building technology and understanding its social
+                impact. In LIS 500: Code and Power, I'm exploring how societal factors like bias, labor, and access
+                shape computing, and how computing, in turn, affects society. I'm excited to examine the human side of
+                technology alongside the technical.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
