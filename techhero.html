@@ -1,83 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Encoding -->
   <meta charset="UTF-8">
-  <title>Tech Hero | LIS 500</title>
+  <!-- Mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>Tech Hero</title>
+  <!-- External CSS -->
   <link rel="stylesheet" href="stylepage.css">
+  <!-- End head -->
 </head>
-
 <body>
+  <!-- Header -->
+  <header class="site-header">
+    <!-- Main title -->
+    <h1>LIS 500 Code and Power</h1>
+    <!-- Subtitle -->
+    <p class="subtitle">Tech hero profile</p>
 
-<!-- Page name: Tech Hero -->
-<!-- Goal: Profile a person challenging norms in tech -->
-<!-- Person of color or ally supporting equity in the United States -->
-<!-- Keep under about 500 words -->
-<!-- External links included -->
-<!-- At least five HTML comments -->
+    <!-- Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About Me</a>
+      <a class="nav-link" href="resources.html">Implicit Bias Resources</a>
+      <a class="nav-link active" href="techhero.html">Tech Hero</a>
+      <!-- End nav -->
+    </nav>
+    <!-- End header -->
+  </header>
 
-<header>
-  <h1>LIS 500: Code and Power</h1>
-  <p>An intersectional examination of the Internet</p>
+  <!-- Main -->
+  <main class="container">
+    <!-- Profile card -->
+    <section class="card">
+      <!-- Heading -->
+      <h2>Joy Buolamwini</h2>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="resources.html">Resources for Implicit Bias</a></li>
-      <li><a href="techhero.html">Tech Hero</a></li>
-    </ul>
-  </nav>
-</header>
+      <!-- Image for the page -->
+      <figure class="figure">
+        <!-- Image -->
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Joy_Buolamwini_2018.jpg/800px-Joy_Buolamwini_2018.jpg"
+          alt="Joy Buolamwini speaking at an event"
+          class="responsive-img"
+        >
+        <!-- Caption -->
+        <figcaption class="caption">Researcher and advocate focused on fairness in AI.</figcaption>
+        <!-- End figure -->
+      </figure>
 
-<main>
+      <!-- Bio -->
+      <p>
+        Joy Buolamwini is a researcher and artist who brought major attention to bias in facial analysis technology.
+        Her work helped show how some systems performed worse for darker skinned faces and for women, which matters because these tools can influence access,
+        safety, and opportunity in real life situations.
+      </p>
 
-  <!-- Main hero section -->
-  <section>
-    <h2>Tech Hero</h2>
-    <h3>Joy Buolamwini</h3>
+      <p>
+        She founded the Algorithmic Justice League, an organization that pushes for accountability in automated decision making.
+        A big part of her impact is translating technical problems into public conversations, so more people can understand what is at stake and ask better questions
+        about how tools are built, tested, and used.
+      </p>
 
-    <p>
-      Joy Buolamwini is a researcher and artist who has pushed the tech industry to confront bias in facial recognition and artificial intelligence. While studying at the Massachusetts Institute of Technology, she noticed that some facial analysis systems struggled to recognize darker skin tones. That experience helped shape her focus on fairness, accountability, and transparency in technology.
-    </p>
+      <p>
+        What makes her a strong tech hero for this course is that she challenges the idea that progress is only about faster and more powerful technology.
+        She focuses on who gets included in data, who gets harmed by mistakes, and what it means to build systems that respect human dignity.
+      </p>
+      <!-- End bio -->
+    </section>
 
-    <p>
-      Buolamwini founded the Algorithmic Justice League, an organization that raises awareness about the social impact of AI and advocates for better standards in how AI systems are built and tested. Her work connects technical issues like training data and model evaluation to real world harms such as discrimination in hiring, policing, and surveillance.
-    </p>
+    <!-- Links card -->
+    <section class="card">
+      <!-- Heading -->
+      <h2>Links and resources</h2>
+      <!-- Link list -->
+      <ul>
+        <li>
+          <a href="https://www.ajl.org/" target="_blank" rel="noopener">
+            Algorithmic Justice League
+          </a>
+        </li>
+        <li>
+          <a href="https://www.media.mit.edu/people/joyab/overview/" target="_blank" rel="noopener">
+            MIT Media Lab profile
+          </a>
+        </li>
+        <li>
+          <a href="https://www.ted.com/talks/joy_buolamwini_how_i_m_fighting_bias_in_algorithms" target="_blank" rel="noopener">
+            TED Talk on fighting bias in algorithms
+          </a>
+        </li>
+        <li>
+          <a href="https://www.codedbias.com/" target="_blank" rel="noopener">
+            Coded Bias documentary site
+          </a>
+        </li>
+      </ul>
+      <!-- End links -->
+    </section>
+    <!-- End main -->
+  </main>
 
-    <p>
-      What makes her stand out as a tech hero is that she does not just criticize problems from the outside. She uses research, public education, and policy engagement to push for change. Her message is that technology should serve people fairly, and that teams must measure performance across different groups so that systems do not silently fail on communities that already face barriers.
-    </p>
-
-    <p>
-      Buolamwini challenges norms in tech by showing that innovation without accountability is not progress. She demonstrates that ethical design requires asking who benefits, who is harmed, and who gets ignored when products are deployed at scale.
-    </p>
-  </section>
-
-  <!-- Links section -->
-  <section>
-    <h3>Links and resources</h3>
-    <ul>
-      <li>
-        Algorithmic Justice League:
-        <a href="https://www.ajl.org/" target="_blank">ajl.org</a>
-      </li>
-      <li>
-        TED talk page:
-        <a href="https://www.ted.com/speakers/joy_buolamwini" target="_blank">Joy Buolamwini on TED</a>
-      </li>
-      <li>
-        Wikipedia overview:
-        <a href="https://en.wikipedia.org/wiki/Joy_Buolamwini" target="_blank">Joy Buolamwini Wikipedia</a>
-      </li>
-    </ul>
-  </section>
-
-</main>
-
-<footer>
-  <!-- Footer content -->
-  <p>© 2026 Cody Sals | LIS 500</p>
-</footer>
-
+  <!-- Footer -->
+  <footer class="site-footer">
+    <!-- Footer -->
+    <p>Created by Cody Sals</p>
+    <!-- End footer -->
+  </footer>
 </body>
 </html>
